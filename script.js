@@ -1,11 +1,11 @@
 const dictionnaireFacultes = {
     "SI": "Sciences Informatiques",
-    "SE": "Sciences Économiques (FASE)",
+    "SE": "Sciences économiques ",
     "DR": "Droit",
     "SP": "Sciences Politiques",
     "PO": "Polytechnique",
     "GE": "Géosciences",
-    "JO": " Sciences de l'information",
+    "JO": " Sciences informatives",
     "ME": "Médecine",
     "PE": "Pédagogie"
 }
@@ -73,7 +73,7 @@ function tenterVoter(faculteCandidat, posteCandidat) {
     }
     
     if (faculteDeLUtilisateur !== faculteCandidat) {
-        alert("🔒 Vote refusé ! Vous appartenez à la faculté des " + faculteDeLUtilisateur + ". Vous ne pouvez pas voter pour un candidat de la faculté de " + faculteCandidat + ".");
+        alert(" Vote refusé ! Vous appartenez à la faculté des " + faculteDeLUtilisateur + ". Vous ne pouvez pas voter pour un candidat de la faculté de " + faculteCandidat + ".");
     } else {
         enregistrerLeVoteOfficiel(posteCandidat);
     }
@@ -176,10 +176,10 @@ function validerConnexion(event) {
     const passwordStocke = localStorage.getItem("user_password");
 
     if (matriculeTape === matriculeStocke && emailTape === emailStocke && passwordTape === passwordStocke) {
-        alert("🔓 Connexion réussie ! Bienvenue sur votre tableau de bord Voice.");
+        alert(" Connexion réussie ! Bienvenue sur votre tableau de bord Voice.");
         window.location.href = "accueil.html"; 
     } else {
-        alert("❌ Connexion échouée : Matricule, E-mail ou Mot de passe incorrect.");
+        alert(" Connexion échouée : Matricule, E-mail ou Mot de passe incorrect.");
     }
 }
 
@@ -261,7 +261,7 @@ function dirigerVersScrutin(typePoste) {
                 alert(" Accès refusé : Le vote pour le Chef de Promotion (CP) est strictement réservé aux étudiants de L1.");
                 return;
             }
-            if (faculte === "Sciences Économiques (FASE)") {
+            if (faculte === "Sciences économiques ") {
                 window.location.href = "cpfase.html";
             } else if (faculte === "Droit") {
                 window.location.href = "cpdroit.html";
@@ -273,10 +273,12 @@ function dirigerVersScrutin(typePoste) {
                 window.location.href = "cpmédecine.html";
             } else if (faculte === "Sciences Informatiques") {
                 window.location.href = "cpfasi.html";
-            } else if (faculte === "Sciences de l'information") {
+            } else if (faculte === "Sciences de informatives") {
                 window.location.href = "cpjournalsime.html";
             } else if (faculte === "Géosciences") {
                 window.location.href = "géosciences.html";
+            } else if ( faculte === "Pédagogie") {
+                window.location.href = "cppédagogie"
             } else {
                 alert("Fichier de vote CP en cours de configuration pour cette faculté.");
             }
@@ -301,7 +303,7 @@ function dirigerVersScrutin(typePoste) {
                 window.location.href = "cpafase.html";
             } else if (faculte === "Sciences informatiques") {
                 window.location.href = "cpafasi.html";
-            } else if (faculte === "Sciences de l'information") {
+            } else if (faculte === "Sciences de informatives") {
                 window.location.href = "cpajournalsime.html";
             } else if (faculte === "Sciences Politiques") {
                 window.location.href = "cpapolitiques.html";
@@ -313,11 +315,11 @@ function dirigerVersScrutin(typePoste) {
         case "PREFAC":
             if (faculte === "Droit") {
                 window.location.href = "droit.html";
-            } else if (faculte === "Sciences Économiques (FASE)") {
+            } else if (faculte === "Sciences économiques ") {
                 window.location.href = "FASE.html";
             } else if (faculte === "Géosciences") {
                 window.location.href = "géosciences.html";
-            } else if (faculte === " Sciences de l'information") {
+            } else if (faculte === " Sciences de informatives") {
                 window.location.href = "journalisme.html";
             } else if (faculte === "Médecine") {
                 window.location.href = "médecine.html";

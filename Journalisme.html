@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Voice App</title>
+    <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div class="conteneur-vote">
+            <h1>Scrutin Universitaire</h1>
+            <h2 id="vote-titre-université...">Faculté de Journalisme</h2>
+            <p class="consigne">Votez en toute impartialité. Les photos ont été volontairement masquées pour privilégier les idées.</p>
+
+            <form id="formulaire-scrutin"onsbmit="enregistrer le vote"(event)>
+
+                <h3>Candidats au poste de président(e) facultaire</h3>
+                <div class="liste-idees">
+                    <div class="carte-idees">
+                        <h4><strong></strong>CANDIDAT PRÉFAC #1 : NEKUA MADJA Faustin</strong></h4>
+                        <p><strong>Idées</strong> : Il propose de créer une station de radio et une Web-TV scolaires gérées à 100 % par les étudiants pour leur permettre de pratiquer le journalisme (présentation, technique, reportage) dès les premières années. 
+                        Il souhaite également signer des conventions de stages d'imprégnation rapide avec les grandes rédactions, chaînes de télévision et stations de radio de la capitale.</p>
+
+                        <p><strong>Device/Slogan</strong> : La voix des sans-voix : pour une faculté connectée aux réalités des médias modernes.</p>
+
+                        <p><strong>Promotion</strong> : M2 Journalisme.</p>
+                    </div>
+
+                    <button type="button" onclick="tenterVoter('Sciences informatives', 'PREFAC')">Voter</button>
+
+
+                    <div class="carte-idees">
+                        <h4><strong>CANDIDAT PRÉFAC #2 :MBUMBA MBIYE ATHOMS</strong></h4>
+                        <p><strong>Idées</strong> : Son projet principal est d'équiper la faculté d'un studio multimédia moderne pour former les étudiants au journalisme numérique, au fact-checking (lutte contre les fausses informations) et au montage vidéo. 
+                        Elle veut aussi organiser des "Masterclass des Médias" mensuelles, où de grands noms du journalisme national et international viendront partager leur expérience de terrain avec les étudiants.</p>
+
+                        <p><strong>Device/Slogan</strong> : L'éthique au cœur de l'info, l'innovation au service des futurs communicateurs.</p>
+
+                        <p><strong>Promotion</strong> : M1 Journalisme.</p>
+                    </div>
+
+                    <button type="button" onclick="tenterVoter('Sciences informatives', 'PREFAC')">Voter</button>
+
+
+                    <div class="carte-idees"
+                        <h4><strong>CANDIDAT PRÉFAC #3 : KANZA PELENDA SERGE</strong></h4>
+                        <p><strong>Idées</strong> : Il souhaite lancer un magazine d'actualité universitaire imprimé et digital pour publier les enquêtes et articles rédigés par les étudiants de la faculté. 
+                        Il s'engage également à mettre en place un prix d'excellence annuel récompensant les meilleurs reportages étudiants, jugés par un jury de professionnels indépendants.</p>
+
+                        <p><strong>Device/Slogan</strong> : Liberté d'expression, excellence académique et intégrité journalistique.</p>
+
+                        <p><strong>Promotion</strong> : L3 Journalisme.</p>
+                    </div>
+
+                    <button type="button" onclick="tenterVoter('Sciences informatives', 'PREFAC')">Voter</button>
+
+
+                
+                </div>
+            </form>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>

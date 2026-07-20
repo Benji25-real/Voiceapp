@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Voice App</title>
+    <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div class="conteneur-vote">
+            <h1>Scrutin Universitaire</h1>
+            <h2 id="vote-titre-université...">Faculté de Polytechnique</h2>
+            <p class="consigne">Votez en toute impartialité. Les photos ont été volontairement masquées pour privilégier les idées.</p>
+
+            <form id="formulaire-scrutin"onsbmit="enregistrer le vote"(event)>
+
+                <h3>Candidats au poste de président(e) facultaire</h3>
+                <div class="liste-idees">
+                    <div class="carte-idees">
+                        <h4><strong></strong>CANDIDAT PRÉFAC #1 : LUTETE LITITI Idris</strong></h4>
+                        <p><strong>Idées</strong> :  Il propose de signer des partenariats avec la SNEL, la REGIDESO et des entreprises de construction pour garantir des visites techniques et des stages industriels obligatoires à chaque fin de cycle. 
+                        Il souhaite également créer une cellule d'ingénieurs-conseils au sein de la faculté pour permettre aux étudiants de Master de travailler sur de vrais projets d'infrastructure locaux.</p>
+
+                        <p><strong>Device/Slogan</strong> : L'ingénierie pratique au service de la nation, une faculté à la pointe de l'industrie.</p>
+
+                        <p><strong>Promotion</strong> : M2 Polytechnique.</p>
+                    </div>
+
+                    <button type="button" onclick="tenterVoter('Polytechnique', 'PREFAC')">Voter</button>
+
+                    <div class="carte-idees">
+                        <h4><strong>CANDIDAT PRÉFAC #2 :NGOMBULA KASSATA Gradi</strong></h4>
+                        <p><strong>Idées</strong> : Son projet majeur est de moderniser les laboratoires de la faculté en y installant des logiciels d'ingénierie de référence (comme AutoCAD, MATLAB ou SolidWorks) accessibles gratuitement sur des ordinateurs de l'université. 
+                        Elle s'engage aussi à organiser le "Polytech-Hackathon" annuel, une compétition d'innovation où les étudiants créent des prototypes de solutions technologiques pour répondre aux problèmes du quotidien congolais.</p>
+
+                        <p><strong>Device/Slogan</strong> : Innovation technologique, rigueur scientifique et parité dans l'ingénieries.</p>
+
+                        <p><strong>Promotion</strong> : M1 Polytechnique.</p>
+                    </div>
+
+                    <button type="button" onclick="tenterVoter('Polytechnique', 'PREFAC')">Voter</button>
+
+                    <div class="carte-idees"
+                        <h4><strong>CANDIDAT PRÉFAC #3 : MUNDEMBA YEMBE David</strong></h4>
+                        <p><strong>Idées</strong> : Il s'engage à mettre en place une bibliothèque numérique centralisant les thèses de fin d'études, les plans d'ingénierie et les archives de cours pour faciliter les recherches académiques. 
+                        Il propose également d'instaurer un fonds de solidarité facultaire pour aider au financement des pièces et du matériel nécessaires à la fabrication des projets de fin d'études des étudiants.</p>
+
+                        <p><strong>Device/Slogan</strong> : bâtir des esprits forts pour concevoir l'avenir de notre pays.</p>
+
+                        <p><strong>Promotion</strong> : L3 Polytchnique.</p>
+                    </div>
+
+                    <button type="button" onclick="tenterVoter('Polytechnique', 'PREFAC')">Voter</button>
+
+
+                </div>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
