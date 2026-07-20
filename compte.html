@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale-1.0">
+    <title>Voice App</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div id="je-retrouve-mon-compte">
+            <h1>Voice</h1>
+            <p class="description">
+                <strong>Veuillez entrez vos identifiants : Matricule ainsi que votre mot de passe,</strong> 
+                si vous ne vous rapplez plus de votre mot de passe veuillez cliquer sur cette option.</p>
+
+                <h2>Entrez vos identifiants</h2>
+
+                <form id="formulaire-vote">
+        <div class="champ-groupe">
+            <label>Matricule :</label>
+            <input type ="text" id="champ-matricule" placeholder="Ex: SI020450">
+        </div>
+
+        <div class="champ-groupe">
+          <label>Adresse e-mail :</label> 
+          <input type ="e-mail" id="champ-email-connexion" placeholder="Ex: Ronaldo@goat.com">
+        </div>
+
+        <div>
+          <label>Mot de passe :</label> 
+          <input type ="password" id="champ-password-connexion" placeholder="Ex:Créer un mot de passe">
+        </div>
+
+        <button type ="button"
+          onclick="validerConnexion(event)">Continuer</button>
+        
+        <div class="liens-aide">
+        <a href="forget.html"><button type="button" class="bouton-action" >J'ai oublié mon mot de passe</button></a>
+        </div>
+    </div>
+
+           <script src="script.js"></script>
+
+</body>
+</html>

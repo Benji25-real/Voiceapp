@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Voice App Espace vote chef(s) de promotion</title>
+    <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div class="conteneur-vote">
+            <h1>Scrutin de promotion</h1>
+            <h2 id="vote-titre-promotion..."> Science de l'éducation </h2>
+            <p class="consigne">Votez en toute impartialité. Les photos ont été volontairement masquées pour privilégier les idées.</p>
+
+            <h3>Candidats au chef de promotion adjoint (CPA)</h3>
+                <div class="liste-idees">
+                    <div class="carte-idees">
+                        <h4>Candidat CPA #1 : ITIPO NGAMBO Priscille</h4>
+                        <p><strong>Idées</strong> : Désire mettre en place des ateliers d'initiation aux outils numériques éduactifs (comme les tableaux 
+                            interactifs et la création de cours en ligne) pour moderniser leur formation.</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    <div class="carte-idees">
+                        <h4>Candidat CPA #2 : KAFUTI MAVULA Tabitha</h4>
+                        <p><strong>Idées</strong> : Souhaite lancer un club de pshychologie de l'enfant pour approfondir la compréhension du comportement des ékleves
+                            en dehors du cadre strictement académique.</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+                    
+                    <div class="carte-idees"
+                        <h4><strong>Candidat CPA #3 : NEEMA RIZIKI Vanessa</strong></h4>
+                        <p><strong>Idées :</strong> Organiser des collectifs de fournitures didactiques pour équiper les étudiants qui vont enseigner dans les écoles défavorisées
+                            pendant leurs stages.</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+                </div>
+            </form>
+        </div>
+        <button class="bouton-action"onclick="window.location.href='cppédagogiechoix.html'">Retour</button>
+    </body>
+</html>

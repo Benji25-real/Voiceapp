@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Voice App</title>
+    <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div id="ecran-inscription">
+            <h1>Voice</h1>
+            <p class="description">
+                <strong>Voice  est une application qui rend les elections simples,
+              libres fiables et accessibles.</strong> Voice est une plateforme         
+              numerique conçue pour moderniser les elections.Votez pour vos chefs de promotion
+              et vos representans directement depuis vore smartphone en toute transparence.</p>
+
+    <h2>Créer un compte Voice</h2>
+
+    <form id="formulaire-vote">
+        <div class="champ-groupe">
+            <label>Matricule :</label>
+            <input type ="text" id="champ-matricule" placeholder="Ex: SI020450">
+        </div>
+
+        <p id="affichage-faculte" style="color: #ff4757; font-weight: bold; margin-top: 5px; font-size: 14px;"></p>
+        
+        <div class="champ-groupe">
+          <label>Noms complets:</label> 
+          <input type ="text" id="champ-nom" placeholder="Ex: Votre nom, postnom et prénom">
+        </div>
+    
+        <div class="champ-groupe">
+          <label>Adresse email :</label> 
+          <input type ="email" id="champ-email" placeholder="Ex: Ronaldo@goat.com">
+        </div>
+        
+        <div>
+          <label>Mot de passe :</label> 
+          <input type ="password" id="champ-password" placeholder="Ex : Saisissez un mot de passe">
+        </div>
+
+        <div class="champ-boutons">
+          <button type="submit" class="bouton-action" onclick="redirigerVersAccueil(event)">S'inscrire et continuer</button>
+        </div>
+          <a href="compte.html"><button type="button" class="bouton-action" >J'ai déjà un compte</button></a>
+          <br>
+          <a href="forget.html"><button type="button" class="bouton-action" >J'ai oublié mon mot de passe</button></a>
+        </div>
+    </form>
+        </div>
+
+           <script src="script.js"></script>
+</body>
+</html>
+

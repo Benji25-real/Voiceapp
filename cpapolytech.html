@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Voice App Espace vote chef(s) de promotion</title>
+    <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div class="conteneur-vote">
+            <h1>Scrutin de promotion</h1>
+            <h2 id="vote-titre-promotion..."> Polytechnique </h2>
+            <p class="consigne">Votez en toute impartialité. Les photos ont été volontairement masquées pour privilégier les idées.</p>
+
+            <h3>Candidats au chef de promotion adjoint (CPA)</h3>
+                <div class="liste-idees">
+                    <div class="carte-idees">
+                        <h4>Candidat CPA #1 : KABEYA TSHIMANGA Jonathan</h4>
+                        <p><strong>Idées</strong> : Il souhaite numériser et centraliser les partages de fiches d'exercices de physique et d'algèbre via un dossier cloud partagé. 
+                        Il propose aussi de planifier des séances de révision collectives obligatoires la veille des travaux pratiques en laboratoire..</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    <div class="carte-idees">
+                        <h4>Candidat CPA #2 : MBUYI KALONJI Nathan</h4>
+                        <p><strong>Idées</strong> : Son objectif est de créer une cellule d'entraide dédiée aux logiciels de dessin technique pour soutenir les étudiants en difficulté. 
+                        Il s'engage également à gérer l'approvisionnement groupé du matériel d'ingénieur indispensable dès la rentrée..</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+                    
+                    <div class="carte-idees"
+                        <h4><strong>Candidat CPA #3 : NGALA MAVUNGU Grâce</strong></h4>
+                        <p><strong>Idées</strong> :Elle veut instaurer un système d'alerte rapide par messagerie pour signaler immédiatement tout changement d'auditoire ou d'horaire. 
+                        Elle propose aussi de désigner des tuteurs parmi les redoublants pour guider les nouveaux étudiants sur les exigences des professeurs.</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+                </div>
+            </form>
+        </div>
+        <button class="bouton-action"onclick="window.location.href='cppolytechchoix.html'">Retour</button>
+    </body>
+</html>

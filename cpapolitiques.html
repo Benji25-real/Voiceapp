@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Voice App Espace vote chef(s) de promotion</title>
+    <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div class="conteneur-vote">
+            <h1>Scrutin de promotion</h1>
+            <h2 id="vote-titre-promotion..."> Sciences politiques </h2>
+            <p class="consigne">Votez en toute impartialité. Les photos ont été volontairement masquées pour privilégier les idées.</p>
+
+            <h3>Candidats au chef de promotion adjoint (CPA)</h3>
+                <div class="liste-idees">
+                    <div class="carte-idees">
+                        <h4>Candidat CPA #1 : NUMBI TSHIBOLA Naomie</h4>
+                        <p><strong>Idées</strong> : Il propose de créer un canal d’information numérique centralisé pour partager instantanément les horaires de cours et les communiqués académiques. 
+                        Il souhaite aussi organiser des séances d'entraide hebdomadaires avant les sessions d'examens..</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    <div class="carte-idees">
+                        <h4>Candidat CPA #2 : LUTUMBA SITA Adrien</h4>
+                        <p><strong>Idées</strong> : Elle veut mettre en place une boîte à idées anonyme pour recenser les difficultés des étudiants de L1 afin de les défendre auprès du CP.
+                        Elle s'engage également à négocier de meilleurs espaces de révision au sein de la faculté..</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+                    
+                    <div class="carte-idees"
+                        <h4><strong>Candidat CPA #3 : NDOMBASI LUKULAsi Olivier</strong></h4>
+                        <p><strong>Idées</strong> : Son objectif est d'organiser un système de parrainage avec les étudiants des années supérieures pour faciliter l'intégration des nouveaux venus en L1. 
+                        Il souhaite aussi structurer l'achat groupé des syllabus pour réduire les frais..</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+                </div>
+            </form>
+        </div>
+        <button class="bouton-action"onclick="window.location.href='cppolitiqueschoix.html'">Retour</button>
+    </body>
+</html>

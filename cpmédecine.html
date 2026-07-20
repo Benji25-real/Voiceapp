@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Voice App Espace vote chef(s) de promotion</title>
+    <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+      
+            <div class="conteneur-vote">
+            <h1>Scrutin de promotion</h1>
+            <h2 id="vote-titre-promotion..."> Médecine </h2>
+            <p class="consigne">Votez en toute impartialité. Les photos ont été volontairement masquées pour privilégier les idées.</p>
+
+            <form id="formulaire-scrutin"onsbmit="enregistrer le vote"(event)>
+
+                <h3>Candidats au poste de chef de promotion (CP)</h3>
+                <div class="liste-idees">
+                    <div class="carte-idees">
+                        <h4>Candidat CP #1 : ILUNGA MUKENDI Emmanuel</h4>
+                        <p><strong>Idées</strong> : Négocier un acces prioritaire et gratuit pour des bibliotheques méicales numériques internationales (comme PubMed ou Cochrane)
+                        pour faciliter les recherches de la promotion</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    <div class="carte-idees">
+                        <h4>Candidat CP #2 : KANKU TSHIBANDA Benjamin</h4>
+                        <p><strong>Idées</strong> : Réorganiser les plannings des stages cliniques en collaboration avec les hopitaux partenaires pour réduire les temps de transport étudiants.</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    <div class="carte-idees"
+                        <h4><strong>Candidat CP #3 : BAHATI NSHOKANO Faustin</strong></h4>
+                        <p><strong>Idées : Il souhaite équiper la salle d'étude de la faculté avec des mannequins de simulation de base et du petut matériel médiacl
+                            pour les séances d'exercices pratiques </strong>.</p>
+                    </div>
+                </div>
+
+                <button type ="button"
+                onclick="validerVote()">Voter</button>
+
+            </form>
+        </div>
+        <button class="bouton-action"onclick="window.location.href='cpmédecinechoix.html'">Retour au choix CP/CPA</button>
+    </body>
+</html>

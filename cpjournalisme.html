@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Voice App Espace vote chef(s) de promotion</title>
+    <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+      
+            <div class="conteneur-vote">
+            <h1>Scrutin de promotion</h1>
+            <h2 id="vote-titre-promotion..."> Sciences de l'information </h2>
+            <p class="consigne">Votez en toute impartialité. Les photos ont été volontairement masquées pour privilégier les idées.</p>
+
+            <form id="formulaire-scrutin"onsbmit="enregistrer le vote"(event)>
+
+                <h3>Candidats au poste de chef de promotion (CP)</h3>
+                <div class="liste-idees">
+                    <div class="carte-idees">
+                        <h4>Candidat CP #1 :AMIAI RHEMA Gracia </h4>
+                        <p><strong>Idées</strong> : Lancer une agence de presse étudiante en ligne pour publier quotidiennement les articles et reportages de la promotion</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    <div class="carte-idees">
+                        <h4>Candidat CP #2 : N'SAKA LUZOLO Syntiche</h4>
+                        <p><strong>Idées</strong> : Organiser des ateliers de fact-checking (vérification des fsits) pour apprendre a lutter contre les fausses informations</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    <div class="carte-idees">
+                        <h4>Candidat CP #3 : BAHATI NZIGIRE Déborah</h4>
+                        <p><strong>Idées</strong> : Mettre en place un ciné-club hebdomadaire suivi de débats pour analyser les grands documentaires de l'histoire des médias.</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+                </div>
+            </form>
+        </div>
+        <button class="bouton-action"onclick="window.location.href='cpjournalismechoix.html'">Retour au choix CP/CPA</button>
+    </body>
+</html>

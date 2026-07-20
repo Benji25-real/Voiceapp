@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Voice App</title>
+    <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div id="section-ipq">
+    <h2>Boîte à Idées, Préoccupations & Questions (IPQ)</h2>
+    <p class="description">Exprimez-vous librement. Vos messages seront enregistrés pour le comité.</p>
+
+    <form id="formulaire-ipq">
+        <div class="champ-groupe">
+            <label for="champ-idees"> Vos Idées (Propositions de projets, innovations...) :</label>
+            <textarea id="champ-idees" placeholder="Ex: J'aimerais proposer l'aménagement d'un espace de révision connecté..." rows="3" style="width: 100%; background: #1e272e; border: 1px solid #34495e; color: #fff; padding: 10px; border-radius: 5px; resize: none; margin-top: 5px; font-family: inherit;"></textarea>
+        </div>
+
+        <div class="champ-groupe" style="margin-top: 15px;">
+            <label for="champ-preoccupations"> Vos Préoccupations (Difficultés, infrastructures, horaires...) :</label>
+            <textarea id="champ-preoccupations" placeholder="Ex: Les auditoires manquent de bancs de rechange..." rows="3" style="width: 100%; background: #1e272e; border: 1px solid #34495e; color: #fff; padding: 10px; border-radius: 5px; resize: none; margin-top: 5px; font-family: inherit;"></textarea>
+        </div>
+
+        <div class="champ-groupe" style="margin-top: 15px;">
+            <label for="champ-questions"> Vos Questions (Demandes d'éclaircissements) :</label>
+            <textarea id="champ-questions" placeholder="Ex: Quand seront publiés les calendriers des examens ?" rows="3" style="width: 100%; background: #1e272e; border: 1px solid #34495e; color: #fff; padding: 10px; border-radius: 5px; resize: none; margin-top: 5px; font-family: inherit;"></textarea>
+        </div>
+
+
+        <div class="champ-boutons" style="margin-top: 20px;">
+            <button type="submit" class="bouton-action" style="cursor: pointer;">Soumettre mon IPQ</button>
+        </div>
+    </form>
+
+    <div id="historique-ipq" style="margin-top: 30px;">
+        <h3> Vos contributions envoyées :</h3>
+        <div id="liste-messages-ipq">
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>

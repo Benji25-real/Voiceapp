@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+content="width=device-width, initia-scale=1.0">
+    <title>Mon Profil - Voice</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+
+        .box-profil {
+            background-color: #1c2541;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba (0, 0, 0, 0.4);
+            border-top: 4px solid #4ea8de;
+            max-width: 900px;
+            width: 90%;
+            margin: 40px auto;
+        }
+        .box-profil h2 {
+            color: #4ea8de;
+            border-bottom: 1px solid #3a506b;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .box-profil p {
+            color: #cbd5e1;
+            font-size: 16px;
+            margin: 12px 0;
+            line-height: 1.6;
+        } 
+        .btn-retour {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+            width: 100%;
+            transition: background 0.2s;
+        } 
+        .btn-retour:hover {
+            background-color: #3a506b;
+        }
+    </style>
+</head>
+<body style="padding: 20px; background-color: #0b132b; color: white; font-family: sans-serif;"
+ <header style="padding: 15px 25px; margin-bottom: 30px; background-color:#1c2541; display: flex; justify-content: space-between; border-radius: 8px;">
+    <div>
+        <h1 style="margin: 5px; font-size: 32px; letter-spacing: 1px;">Voice</h1>
+        <p style="margin: 5px 0 0 0; color: #ff4d4d; font-weight: bold; font-size: 14px; text-transform: uppercase;">Année-Académique : 2026-2027</p>
+    </div>
+</header>
+
+<div class="box-profil">
+    <h2> Mon Profil Étudiant (MPÉ)</h2>
+    <p>Nom complet : <span id="profil-nom">Chargement...</span></p>
+    <p>Matricule : <span id="profil-matricule">Chargement...</span></p>
+    <p>Promotion : <span id="profil-promotion">Chargement...</span></p>
+    <p>Statut de Vote : <span id="profil-statut" style="color: #ff4757; font-weight: bold;">Non voté</span></p>
+
+}
+
+    <button class="btn-retour"
+onclick="window.location.href='accueil.html'">Retour au Tableau de bord</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

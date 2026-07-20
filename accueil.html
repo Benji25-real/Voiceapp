@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+content="width=device-width, initial-scale-1.0">
+    <title>Tableau de bord</title>
+    <link rel="stylesheet"
+href="Style.css"> 
+    <style>
+
+        .grille-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax (300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+            padding-bottom: 50px;
+        }
+
+        .carte-option {
+            background-color: #1c2541;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 4);
+            border-top: 4px solid #4ea8de;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 220px;
+             }
+
+        .carte-option h3 {
+            margin-top: 0;
+            color: #4ea8de;
+            font-size: 20px;
+            border-bottom: 1px solid #3a506b;
+            padding-bottom: 10px;
+        }
+
+        .carte-option p {
+            color: #cbd5e1;
+            font-size: 14px;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        .bouton-action {
+            background-color: #4ea8de;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 15px;
+            transition: background 0.2s;
+        }
+
+        .bouton-action:hover {
+            background-color: #3a506b;
+        }
+
+        .zone-image {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .zone-image img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solidn #4ea8de;
+        }
+
+
+    </style>
+</head>
+<body style="padding: 20px; background-color: #0b132b; color : white; font-family: sans-serif;">
+
+    <!-- (Header )-->
+    <header style ="padding: 15px 25px; margin-bottom : 30px; background-color: #1c2541; display: flex; justify-content: space-between ;border-radius: 8px; align-items: center; ">
+        <div>
+            <h1 style="margin: 5px ; font-size: 32px; letter-spacing: 1px;">Voice</h1>
+            <p style="margin: 5px 0 0 0; color: #ff4d4d; font-weight: bold;  font-size: 14px; text-transform: uppercase;">Année-Académique : 2026-2027</p>
+        </div>
+        
+        <!-- <img src="logo.fac.png" alt="logo" style="height: 50px"> -->
+    </header>
+
+    <h2 style="margin-left: 5px; color:#ffffff;"> Voici le tableau de bord</h2>
+
+        <!-- La grille connectée -->
+         <div class="grille-sections">
+
+            <!-- 1. MON PROFIL-->
+            <div class="carte-option">
+                <h2> Mon profil</h2>
+                <p><strong>Vos informations personelles, votre matricule et vérifiez votre éligibilité au vote.</strong></p>
+                <button class="bouton-action"onclick="window.location.href='profil.html'">Voir mon profil</button>
+            </div>
+
+            <!-- 2.MA PROMOTION-->
+            <div class="carte-option">
+                <h2> Ma promotion</h2>
+                <p><strong>Votez pour vos futurs représentants directs : Élection du chef de promotion (CP) et de son adjoint le/la (CPA)</strong></p>
+                <button class="bouton-action"onclick="window.location.href='promotion.html'">Accéder au vote</button>
+            </div>
+
+            <!-- 2.PRÉSIDENCE-->
+            <div class="carte-option">
+                <h2> Présidence</h2>
+                <p><strong> Votez pour le (la) présidente(e) des étudiants de l'université</strong></p>
+                <button class="bouton-action"onclick="window.location.href='présidence.html'">Accéder au vote</button>
+            </div>
+
+            <div class="carte-otpion">
+                <h2> Ma faculté</h2>
+                <p><strong>votre choix pour élire les délégués et représentants officiels de votre faculté</strong></p>
+                <button class="bouton-action"onclick="window.location.href='Faculté.html'">Accéder au vote</button>
+            </div>
+
+            <div class="carte-action" style="border-top-color: #6c757d;">
+                <h2>IPQ (Facultatif) </h2>
+                <p><strong>Vos idées, signales, vos préoccupations ou posez vos questions de manière anonyme.</strong></p>
+                <button class="bouton-action"onclick="window.location.href='ipq.html'" style="background-color: #6c757d;">Laisser un message</button>
+            </div>
+
+         </div>
+
+</body>
+</html>

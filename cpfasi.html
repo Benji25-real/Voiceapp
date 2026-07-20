@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Voice App Espace vote chef(s) de promotion</title>
+    <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+      
+            <div class="conteneur-vote">
+            <h1>Scrutin de promotion</h1>
+            <h2 id="vote-titre-promotion..."> Sciences informatiques </h2>
+            <p class="consigne">Votez en toute impartialité. Les photos ont été volontairement masquées pour privilégier les idées.</p>
+
+            <form id="formulaire-scrutin"onsbmit="enregistrer le vote"(event)>
+
+                <h3>Candidats au poste de chef de promotion (CP)</h3>
+                <div class="liste-idees">
+                    <div class="carte-idees">
+                        <h4>Candidat CP #1 : MUKENDI KALONJI Jean</h4>
+                        <p><strong>Idées</strong> : Instaurer des séances de tutorat gratuites pour les étudiants en difficultés et créer un canal d'information direct avec le décanat</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    <div class="carte-idees">
+                        <h4>Candidat CP #2 : OZURA LUTETE Miradi</h4>
+                        <p><strong>Idées</strong> : Aménager des espaces d'étude avec Wi-Fi permanent dans la faculté, organiser des conférences avec des professionels du secteur et revoir les horaires des cours.</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    <div class="carte-idees"
+                        <h4><strong>Candidat CP #3 : MBALA KWETE Osée</strong></h4>
+                        <p><strong>Idées :</strong>organiser des sessions d'études collectives et plus de travaux didactiques.</p>
+                    </div>
+                </div>
+
+                <button type ="button"
+                onclick="validerVote()">Voter</button>
+
+                
+                </div>
+            </form>
+        </div>
+        <button class="bouton-action"onclick="window.location.href='cpfasichoix.html'">Retour au choix CP/CPA</button>
+</body>
+</html>

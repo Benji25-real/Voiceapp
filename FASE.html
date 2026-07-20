@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Voice App</title>
+    <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div class="conteneur-vote">
+            <h1>Scrutin Universitaire</h1>
+            <h2 id="vote-titre-université...">Faculté des sciences économiques/FASE</h2>
+            <p class="consigne">Votez en toute impartialité. Les photos ont été volontairement masquées pour privilégier les idées.</p>
+
+            <form id="formulaire-scrutin"onsbmit="enregistrer le vote"(event)>
+
+                <h3>Candidats au poste de président(e) facultaire</h3>
+                <div class="liste-idees">
+                    <div class="carte-idees">
+                        <h4><strong></strong>CANDIDAT PRÉFAC #1 : TINTA MBODI Josias</strong></h4>
+                        <p><strong>Idées</strong> : Il souhaite créer un incubateur de projets au sein de la faculté pour aider les étudiants à financer et lancer leurs propres start-ups en parallèle de leurs études. 
+                        Il propose aussi de négocier des partenariats avec les banques et entreprises de la place pour automatiser l'octroi de stages professionnels aux meilleurs étudiants de chaque promotion..</p>
+
+                        <p><strong>Device/Slogan</strong> : L'économie de demain commence par une faculté performante aujourd'hui.</p>
+
+                        <p><strong>Promotion</strong> : M1 FASE.</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    <div class="carte-idees">
+                        <h4><strong>CANDIDAT PRÉFAC #2 :KINKELA DANIEL Précieux</strong></h4>
+                        <p><strong>Idées</strong> : Son objectif est d'installer une salle informatique moderne équipée de logiciels de statistiques et de gestion (comme SPSS, R ou Excel avancé) pour former les étudiants aux outils réels du marché de l'emploi. 
+                        Elle veut également instaurer un système d'audit interne géré par les étudiants pour assurer la transparence dans la perception de tous les frais facultaires..</p>
+
+                        <p><strong>Device/Slogan</strong> : La FASE du futur : excellence académique, intégrité et innovation numérique.</p>
+
+                        <p><strong>Promotion</strong> : M1 FASE.</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    <div class="carte-idees"
+                        <h4><strong>CANDIDAT PRÉFAC #3 : MOLOTO MBAZI Jean-Claude</strong></h4>
+                        <p><strong>Idées</strong> : .</p>
+
+                        <p><strong>Device/Slogan</strong> : Unir les économistes et gestionnaires pour maximiser notre potentiel.</p>
+
+                        <p><strong>Promotion</strong> : Il propose de lancer le "Forum Économique Annuel de la FASE", un grand événement réunissant professeurs, experts du secteur financier et étudiants autour des enjeux économiques nationaux. 
+                        Il s'engage aussi à réhabiliter les infrastructures de recherche de la faculté et à rendre disponible une connexion Wi-Fi haut débit gratuite dans les grands auditoires..</p>
+
+                     <button type ="button"
+                     onclick="validerVote()">Voter</button>
+
+                    </div>
+
+                    <button class="btn-retour"
+                    onclick="window.location.href='Faculté.html'">Retour au Tableau des facultés</button>
+                    
+                </div>
+            </form>
+        </div>

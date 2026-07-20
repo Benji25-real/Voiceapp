@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Voice App</title>
+    <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div class="conteneur-vote">
+            <h1>Scrutin Universitaire</h1>
+            <h2 id="vote-titre-université...">Faculté de Géo-Sciences</h2>
+            <p class="consigne">Votez en toute impartialité. Les photos ont été volontairement masquées pour privilégier les idées.</p>
+
+            <form id="formulaire-scrutin"onsbmit="enregistrer le vote"(event)>
+
+                <h3>Candidats au poste de président(e) facultaire</h3>
+                <div class="liste-idees">
+                    <div class="carte-idees">
+                        <h4><strong></strong>CANDIDAT PRÉFAC #1 : MUZOLA NSIMBA ETHBERGE</strong></h4>
+                        <p><strong>Idées</strong> : Il s'engage à obtenir des subventions auprès du Ministère des Mines pour financer entièrement les excursions géologiques et les stages de terrain, souvent très coûteux pour les étudiants. 
+                        Il souhaite également numériser la cartographie de la faculté et créer une base de données partagée pour les échantillons de roches et de minéraux étudiés.</p>
+
+                        <p><strong>Device/Slogan</strong> : Valoriser nos ressources, moderniser notre apprentissage sur le terrain.</p>
+
+                        <p><strong>Promotion</strong> : M2 Géo-sciences.</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    <div class="carte-idees">
+                        <h4><strong>CANDIDAT PRÉFAC #2 : IPUPA SINS Fally</strong></h4>
+                        <p><strong>Idées</strong> : Son objectif est de redynamiser le Forum Géosciences annuel en y invitant directement les grandes entreprises minières et pétrolières de la place pour faciliter l'embauche des diplômés. 
+                        Elle propose aussi d'installer un laboratoire informatique équipé de logiciels modernes de cartographie et de systèmes d'information géographique (SIG).</p>
+
+                        <p><strong>Device/Slogan</strong> : Les géosciences au cœur des défis climatiques et miniers de la RDC.</p>
+
+                        <p><strong>Promotion</strong> : M1 Géo-sciences.</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    <div class="carte-idees"
+                        <h4><strong>CANDIDAT PRÉFAC #3 : MODJALISI DEMANJA Kevin</strong></h4>
+                        <p><strong>Idées</strong> :  : Il souhaite mettre en place un partenariat avec le Service Géologique National pour offrir des formations certifiantes gratuites aux étudiants en plus de leur cursus classique. 
+                        Il propose également d'instaurer une cellule d'alerte environnementale gérée par les étudiants pour analyser les risques de glissements de terrain et d'érosion dans la périphérie de l'université.</p>
+
+                        <p><strong>Device/Slogan</strong> : Une gouvernance transparente pour une faculté d'excellence.</p>
+
+                        <p><strong>Promotion</strong> : L3 Géo-sciences.</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    </div>
+                </div>
+            </form>
+        </div>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Voice App</title>
+    <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div class="conteneur-vote">
+            <h1>Scrutin Universitaire</h1>
+            <h2 id="vote-titre-université...">Faculté de pédagogie</h2>
+            <p class="consigne">Votez en toute impartialité. Les photos ont été volontairement masquées pour privilégier les idées.</p>
+
+            <form id="formulaire-scrutin"onsbmit="enregistrer le vote"(event)>
+
+                <h3>Candidats au poste de président(e) facultaire</h3>
+                <div class="liste-idees">
+                    <div class="carte-idees">
+                        <h4><strong></strong>CANDIDAT PRÉFAC #1 : DIOWAKU MATONDO Josué</strong></h4>
+                        <p><strong>Idées</strong> : Il propose de créer un laboratoire de micro-enseignement au sein de la faculté, équipé de caméras, pour permettre aux étudiants de s'exercer aux techniques d'animation de classe et de gestion d'auditoire avant leurs stages professionnels. 
+                        Il souhaite également introduire des modules de formation gratuits sur l'utilisation des technologies éducatives numériques (e-learning) indispensables pour les écoles modernes.</p>
+
+                        <p><strong>Device/Slogan</strong> : Innover dans la transmission, former l'élite éducative de demain.</p>
+
+                        <p><strong>Promotion</strong> : M2 Pédagogie.</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    <div class="carte-idees">
+                        <h4><strong>CANDIDAT PRÉFAC #2 : MANGOMBA BANAM Daniel</strong></h4>
+                        <p><strong>Idées</strong> : Son projet principal est de signer des accords de partenariat stables avec le Ministère de l'Éducation Nationale et les réseaux d'écoles privées pour automatiser l'octroi de stages d'enseignement de qualité dès la fin du premier cycle. 
+                        Elle s'engage également à restructurer la bibliothèque de la faculté en y intégrant les manuels scolaires et programmes de l'enseignement primaire et secondaire mis à jour.</p>
+
+                        <p><strong>Device/Slogan</strong> : Une pédagogie de terrain pour une insertion professionnelle garantieUne pédagogie de terrain pour une insertion professionnelle garantie.</p>
+
+                        <p><strong>Promotion</strong> : M1 Pédagogie.</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    <div class="carte-idees"
+                        <h4><strong>CANDIDAT PRÉFAC #3 : NTAWINIGA DJUNGA Jéremie</strong></h4>
+                        <p><strong>Idées</strong> : Il souhaite mettre en place un concours annuel du "Meilleur Projet Pédagogique", récompensant les innovations des étudiants en matière de supports didactiques et de méthodes d'alphabétisation. 
+                        Il propose également d'instaurer des cellules d'écoute psychopédagogique gérées par les étudiants de Master pour soutenir l'orientation et la réussite de leurs camarades des cycles inférieurs.</p>
+
+                        <p><strong>Device/Slogan</strong> : Le mérite académique au service des sciences de l'éducation.</p>
+
+                        <p><strong>Promotion</strong> : L3 Pédagogie.</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    </div>
+                </div>
+            </form>
+        </div>

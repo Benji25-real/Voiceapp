@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Voice App Espace vote chef(s) de promotion</title>
+    <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+      
+            <div class="conteneur-vote">
+            <h1>Scrutin de promotion</h1>
+            <h2 id="vote-titre-promotion..."> Science de l'éducation </h2>
+            <p class="consigne">Votez en toute impartialité. Les photos ont été volontairement masquées pour privilégier les idées.</p>
+
+            <form id="formulaire-scrutin"onsbmit="enregistrer le vote"(event)>
+
+                <h3>Candidats au poste de chef de promotion (CP)</h3>
+                <div class="liste-idees">
+                    <div class="carte-idees">
+                        <h4>Candidat CP #1 : LOKONDA MBOYO Samuel</h4>
+                        <p><strong>Idées</strong> :  Créer une banque de partages de fiches de lecons et de manuels scolaires officiels pour aider les étudiants 
+                            a préparer leurs stages uniquement.</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    <div class="carte-idees">
+                        <h4>Candidat CP #2 : MKAMBO LUZOLO Daniel</h4>
+                        <p><strong>Idées</strong> : Organiser des simulations de classes réelles devant un jury de professeurs pour corriger la posture et la diction
+                            des futurs enseignants avant leurs examanes pratiques.</p>
+                    </div>
+
+                    <button type ="button"
+                    onclick="validerVote()">Voter</button>
+
+                    <div class="carte-idees"
+                        <h4><strong>Candidat CP #3 : PALUKU MATO Justin</strong></h4>
+                        <p><strong>Idées :</strong>Nouer des partenariats avec les grands complexes scolaires de la ville pour garantir un lieu de stage a chaque 
+                            étudiant de la promotion des le début de l'année.</p>
+                    </div>
+                </div>
+
+                <button type ="button"
+                onclick="validerVote()">Voter</button>
+
+            
+                </div>
+            </form>
+        </div>
+        <button class="bouton-action"onclick="window.location.href='cppédagogiechoix.html'">Retour au choix CP/CPA</button>
+    </body>
+</html>
