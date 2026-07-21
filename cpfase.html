@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Voice App Espace vote chef(s) de promotion</title>
+    <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+      
+            <div class="conteneur-vote">
+            <h1>Scrutin de promotion</h1>
+            <h2 id="vote-titre-promotion..."> Sciences Économiques </h2>
+            <p class="consigne">Votez en toute impartialité. Les photos ont été volontairement masquées pour privilégier les idées.</p>
+
+            <form id="formulaire-scrutin"onsbmit="enregistrer le vote"(event)>
+
+                <h3>Candidats au poste de chef de promotion (CP)</h3>
+                <div class="liste-idees">
+                    <div class="carte-idees">
+                        <h4>Candidat CP #1 : MUTOMBO TSHILUMBA Kevine</h4>
+                        <p><strong>Idées</strong> : Il propose d’organiser des séances de tutorat hebdomadaires axées exclusivement sur la microéconomie et les mathématiques financières pour faire baisser le taux d'échec. 
+                        Il souhaite aussi négocier avec les professeurs l'accès anticipé aux anciens sujets d'examens corrigés</p>
+                    </div>
+
+                    <button type="button" onclick="tenterVoter('Sciences économiques', 'CP')">Voter</button>
+
+                    <div class="carte-idees">
+                        <h4>Candidat CP #2 : ILUNGA MWENZE Dorcas</h4>
+                        <p><strong>Idées</strong> : Son objectif est de créer une bibliothèque numérique partagée regroupant tous les syllabus, fiches de TD et ouvrages d'économie de référence indispensables pour la L1.
+                         Elle veut également instaurer un système de communication direct et transparent entre les étudiants et le décanat..</p>
+                    </div>
+
+                    <button type="button" onclick="tenterVoter('Sciences économiques', 'CP')">Voter</button>
+
+                    <div class="carte-idees">
+                        <h4>Candidat CP #3 : KABONGO MUTEBA Christian</h4>
+                        <p><strong>Idées</strong> : Il souhaite structurer la promotion en groupes d'étude restreints par affinité pour faciliter la préparation des travaux dirigés (TD) collectifs. 
+                        Il propose aussi de mettre en place une caisse de solidarité pour aider les étudiants en difficulté à financer l'impression de leurs supports de cours. .</p>
+                    </div>
+
+                   <button type="button" onclick="tenterVoter('Sciences économiques', 'CP')">Voter</button> 
+
+            </form>
+        </div>
+        <button class="bouton-action"onclick="window.location.href='cpfasechoix.html'">Retour au choix CP/CPA</button>
+    </body>
+</html>
